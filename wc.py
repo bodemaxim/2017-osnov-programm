@@ -9,22 +9,19 @@ print(characters)
 #let's count spaces first
 
 spaces = 0
+enters = 0
 
-for c in sys.stdin.read():
+for c in text:
 	if c ==' ': #the  space my be extra
-		spaces == spaces + 1
+		spaces = spaces + 1
+	if c =='\n': #the \n may be extra
+		enters = enters + 1
 
 #let's count words
 words = spaces + 1
 print(words)
 
 #let's count new lines, to say it so, 'enters'
-
-enters = 0
-
-for d in sys.stdin.read():
-	if d =='\n': #the \n may be extra
-		enters == enters + 1
 
 #let's count lines
 lines = enters + 1
